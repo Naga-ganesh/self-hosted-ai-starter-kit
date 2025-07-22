@@ -131,7 +131,6 @@ services:
       - "/dev/dri"
 
   ollama-pull-llama-cpu:
-    profiles: ["cpu"]
     <<: *init-ollama
     depends_on:
       - ollama-cpu
